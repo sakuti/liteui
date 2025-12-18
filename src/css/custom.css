@@ -1,0 +1,13 @@
+/**
+    Here you can easily add custom styles to different components
+    and override all the components' own styles.
+*/
+
+/**
+    For example, I want the <button> element to have
+    a pointer cursor if the button is not disabled.
+    You can remove this if needed.
+*/
+button:not([disabled]) {
+    cursor: pointer;
+}

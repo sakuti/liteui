@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en" style="color-scheme: dark;">
+<head>
+  <meta charset="UTF-8" />
+  <title>lite-ui demo</title>
+  <link rel="stylesheet" href="dist/ui.css">
+  <script src="dist/ui.js" defer></script>
+  <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+</head>
+<body style="display: flex; gap: 1rem; padding: 2rem; background-color: var(--color-background);">
+  <button default>Default</button>
+  <button secondary>Secondary</button>
+  <button outline>Outline</button>
+  <button destructive>Destructive</button>
+  <button ghost>Ghost</button>
+  <button link>Link</button>
+  
+  <button outline disabled>
+    Disabled
+  </button>
+
+  <button outline>
+    <i data-lucide="message-circle-question-mark"></i>
+    Icon with text
+  </button>
+
+  <button outline icon>
+    <i data-lucide="message-circle-question-mark"></i>
+  </button>
+
+  <button secondary handler_example>
+    Handler Example
+  </button>
+
+  <script defer>lucide.createIcons();</script>
+</body>
+</html>

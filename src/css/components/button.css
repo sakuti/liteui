@@ -1,0 +1,51 @@
+button {
+  @apply inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium transition-all shrink-0 outline-none disabled:pointer-events-none disabled:opacity-50 focus-visible:border-ring focus-visible:ring-ring/50 aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive h-9 px-4 py-2;
+}
+button:has(>svg) {
+  @apply px-3;
+}
+button[default] {
+  @apply bg-primary text-primary-foreground hover:bg-primary/90;
+}
+button[destructive] {
+  @apply bg-destructive text-white hover:bg-destructive/90 focus-visible:ring-destructive/20 dark:focus-visible:ring-destructive/40 dark:bg-destructive/60;
+}
+button[outline] {
+  @apply border bg-background shadow-xs hover:bg-accent hover:text-accent-foreground dark:bg-input/30 dark:border-input dark:hover:bg-input/50;
+}
+button[secondary] {
+  @apply bg-secondary text-secondary-foreground hover:bg-secondary/80;
+}
+button[ghost] {
+  @apply hover:bg-accent hover:text-accent-foreground dark:hover:bg-accent/50;
+}
+button[link] {
+  @apply text-primary underline-offset-4 hover:underline;
+}
+button[sm] {
+  @apply h-8 rounded-md gap-1.5 px-3;
+}
+button[sm]:has(>svg) {
+  @apply px-2.5;
+}
+button[lg] {
+  @apply h-10 rounded-md px-6;
+}
+button[lg]:has(>svg) {
+  @apply px-4;
+}
+button[icon] {
+  @apply size-9;
+}
+button[icon-sm] {
+  @apply size-8;
+}
+button[icon-lg] {
+  @apply size-10;
+}
+button svg {
+  @apply pointer-events-none shrink-0;
+}
+button svg:not([class*="size-"]) {
+  @apply size-4;
+}
