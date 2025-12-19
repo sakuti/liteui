@@ -5,4 +5,10 @@
 @import "tailwindcss";
 @import "./variables.css";
 @import "./components/button.css";
-@import "./custom.css"
+@import "./components/alert.css";
+@import "./custom.css";
+
+* {
+  border-color: var(--color-border);
+  outline-color: var(--color-ring)
+}
